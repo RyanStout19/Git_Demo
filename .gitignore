@@ -1,0 +1,7 @@
+# Ignore listed files
+secrets.txt
+confidential.exe
+*.md
+
+# Don't ignore README.md
+!README.md
