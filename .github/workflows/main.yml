@@ -18,6 +18,6 @@ jobs:
   secondary_actions:
     runs-on: ubuntu-latest
       steps:
-      - uses: actions/checkout@v3
-      - run: chmod +x test_script.sh
-      - run: ./test_script.sh 
+        - uses: actions/checkout@v3
+        - run: chmod +x test_script.sh
+        - run: ./test_script.sh 
