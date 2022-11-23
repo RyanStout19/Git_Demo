@@ -9,5 +9,5 @@ whoami
 ls -a
 cat README.md
 touch "wag1" >> scriptfile.txt
-echo scriptfile.txt
+cat scriptfile.txt
 
