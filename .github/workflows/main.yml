@@ -41,11 +41,10 @@ jobs:
 
   vars_job:
     env:
-    name: Ryan
+      name: Ryan
     runs-on: ubuntu-latest
     steps:
-     - uses: actions/checkout@v3
-     - run: "Hello "$name""
+     - run: echo "Hello "$name""
      - run: echo "$app_name"
      - run: touch $app_name >> eddie.txt
      - run: echo "${{secrets.TOP_SECRET}}"
