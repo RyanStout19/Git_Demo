@@ -5,7 +5,7 @@ on: [push]
 
 # Global env var
 env:
-  app_name: appcity.exe
+  app_name: steadyeddie
 
 
 # What jobs we want as part of the workflow
@@ -44,6 +44,8 @@ jobs:
   env:
     name: Ryan
   steps:
-  - run: "Hello ${{name}}" # to access variable use $ 
+  - run: "Hello "$name""
+  - run: echo "$app_name"
+  - run: touch $app_name >> eddie.txt
   - run: echo "${{secrets.TOP_SECRET}}"
 
