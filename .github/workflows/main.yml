@@ -2,6 +2,12 @@
 name: Git Actions Demo
 # When does the workflow run? The workflow / CI server runs / triggers when there is a push to the repo
 on: [push]
+
+# Global env var
+env:
+  app_name: appcity.exe
+
+
 # What jobs we want as part of the workflow
 jobs:
   actions_demo:
@@ -21,3 +27,23 @@ jobs:
      - uses: actions/checkout@v3
      - run: chmod +x test_script.sh
      - run: ./test_script.sh 
+
+
+
+# variable is a placeholder for information
+# environment variable - placeolder for information that exists in this scope / machine / terminal
+# Env car types:
+# Global - accessible anywhere (exits outisde of jobs)
+# Local - only usable in the job / step specified
+# Secret - confidential or private variables
+
+
+
+  env_vars_job:
+  runs-on: ubuntu-latest
+  env:
+    name: Ryan
+  steps:
+  - run: "Hello $name" # to access variable use $ 
+  - run: echo "${{secrets.TOP_SECRET}}"
+
