@@ -12,4 +12,5 @@ jobs:
     - run: touch file.txt
     - run: echo "example text" > file.txt
     - run: cat "file"
+    - run: ls -a
     - run: whoami
