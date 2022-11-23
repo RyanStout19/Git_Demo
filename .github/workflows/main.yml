@@ -43,9 +43,9 @@ jobs:
     runs-on: ubuntu-latest
   env:
     name: Ryan
-  steps:
-  - run: "Hello "$name""
-  - run: echo "$app_name"
-  - run: touch $app_name >> eddie.txt
-  - run: echo "${{secrets.TOP_SECRET}}"
+    steps:
+    - run: "Hello "$name""
+    - run: echo "$app_name"
+    - run: touch $app_name >> eddie.txt
+    - run: echo "${{secrets.TOP_SECRET}}"
 
