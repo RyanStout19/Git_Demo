@@ -44,6 +44,6 @@ jobs:
   env:
     name: Ryan
   steps:
-  - run: "Hello $name" # to access variable use $ 
+  - run: "Hello ${{name}}" # to access variable use $ 
   - run: echo "${{secrets.TOP_SECRET}}"
 
