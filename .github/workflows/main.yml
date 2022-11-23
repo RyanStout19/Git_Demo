@@ -11,6 +11,6 @@ jobs:
     - run: echo "Hello World!"
     - run: touch file.txt
     - run: echo "example text" > file.txt
-    - run: cat "file"
+    - run: cat "file.txt"
     - run: ls -a
     - run: whoami
