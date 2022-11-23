@@ -39,10 +39,10 @@ jobs:
 
 
 
-  env_vars_job:
-    runs-on: ubuntu-latest
-  env:
+  vars_job:
+    env:
     name: Ryan
+    runs-on: ubuntu-latest
     steps:
      - run: "Hello "$name""
      - run: echo "$app_name"
