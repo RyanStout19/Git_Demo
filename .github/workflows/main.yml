@@ -1,0 +1,15 @@
+# Name of the workflow
+name: Git Actions Demo
+# When does the workflow run? The workflow / CI server runs / triggers when there is a push to the repo
+on: [push]
+# What jobs we want as part of the workflow
+jobs:
+  actions_demo:
+    runs-on: ubuntu-latest # Creating a container (vm) that uses ubuntu at the latest version
+    # What we want the machine to action
+    steps:
+    - run: echo "Hello World!"
+    - run: touch file.txt
+    - run: echo "example text" > file.txt
+    - run: cat "file"
+    - run: whoami
